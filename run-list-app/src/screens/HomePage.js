@@ -20,7 +20,6 @@ const HomePage = () => {
         fetchData().then((res) => {setList(res)});
     }, [])
 
-
     return (
         <div>
             <AccordionList list={list}/>

@@ -21,14 +21,12 @@ const Map = ({list, center}) => {
                     let lat = parseFloat(point.point.lat);
                     let lng = parseFloat(point.point.lon);
 
-                    return(
-
-                            <LocationPin
-                                key={index}
-                                lat={lat}
-                                lng={lng}
-                            />
-
+                    return (
+                        <LocationPin
+                            key={index}
+                            lat={lat}
+                            lng={lng}
+                        />
                     )
                 })}
             </GoogleMapReact>
